@@ -21,7 +21,7 @@ class Race
 	horse_choice = $stdin.gets.chomp
 
 
-		if @field.has_key?(horse_choice)
+		if @field.horses.has_key?(horse_choice)
 
 
 
@@ -37,7 +37,8 @@ class Race
 
 						make_race_happen	    #as defined below
 
-		else puts "WRONG"
+		else 
+			puts "WRONG"
 
 		end
 

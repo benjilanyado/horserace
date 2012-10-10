@@ -1,7 +1,7 @@
 class Field
 
 
-	attr_accessor :field
+	attr_accessor :horses
 
 	include Enumerable
 
@@ -10,7 +10,7 @@ class Field
 
 
 		def initialize
-			@field = {
+			@horses = {
 
 				"Dave" => "4",
 				"Jim" => "20",
@@ -30,7 +30,7 @@ class Field
 
 		def display_field
 
-			@field.each do|name, odds|
+			@horses.each do|name, odds|
 
 				puts "#{name} #{odds}"
 
