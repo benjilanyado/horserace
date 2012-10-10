@@ -20,17 +20,28 @@ class Race
 
 	horse_choice = $stdin.gets.chomp
 
-	#IF THEIR HORSE IS ONE OF THE KEY IN THE HASH OF FIELD, PROCEED
+
+		if @field.has_key?(horse_choice)
 
 
-	# IF IT ISN'T SAY "AGAIN, KNOBHEAD"
+
+					#IF THEIR HORSE IS ONE OF THE KEY IN THE HASH OF FIELD, PROCEED
 
 
-	puts "HOW MUCH YOU WANNA PAY?"
+					# IF IT ISN'T SAY "AGAIN, KNOBHEAD"
 
-	bet_size = $stdin.gets.chomp	
 
-		make_race_happen	    #as defined below
+					puts "HOW MUCH YOU WANNA PAY?"
+
+					bet_size = $stdin.gets.chomp	
+
+						make_race_happen	    #as defined below
+
+		else puts "WRONG"
+
+		end
+
+					
 	end
 
 
