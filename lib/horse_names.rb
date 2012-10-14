@@ -94,8 +94,7 @@ Prince
 Chili ]
 
 
-field = pool.sample(4 + rand(6))
-}
+puts field = pool.sample(rand(6..10))
 
 
 
